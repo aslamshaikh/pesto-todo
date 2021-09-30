@@ -50,7 +50,7 @@ class App extends Component{
       this.state.todos.forEach(x=>{
         if(Date.parse(x.time) < (new Date())){
           if(!x.isAlreadyToasted){
-            toast('Task ' + x.name + ' is completed!', {autoClose : 10000});
+            toast('Task ' + x.name + ' is completed.', {autoClose : 10000});
           }
         }
         todos.push({name:x.name
